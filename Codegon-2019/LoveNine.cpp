@@ -1,3 +1,40 @@
+//METHOD -1 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	int n;
+	cin>>n;
+	
+	if(n<9){
+		cout<<"-1";
+	}
+	else{
+		int x = n%10;
+		int l = 10-x;
+		
+		if(n-l*9>=0){
+			cout<<l<<endl;
+		}
+		else{
+			cout<<"-1"<<endl;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+//Method - 2 (dp)
+
 #include<bits/stdc++.h>
 using namespace std;
 
